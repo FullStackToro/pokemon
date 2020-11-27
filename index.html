@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+    <script>
+        function api_pokemon() {
+
+            for (let i = 1; i <= 151; i++) {
+                $('.img_pokemon').append("<img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + i + ".png' alt=''>")
+            }
+        }
+        $('document').ready(function() {
+            api_pokemon();
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="img_pokemon">
+
+    </div>
+
+
+</body>
+
+</html>
